@@ -1,0 +1,38 @@
+.speakers-row{
+	padding-top: 150px;
+	padding-bottom: 150px;
+}
+.speakers-title{
+	font-size: 42px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700;
+}
+.speakers-text{
+	font-size: 24px;
+}
+.past-speakers-wrapper{
+	overflow: scroll;
+	width: auto;
+	overflow-y: hidden;
+    white-space: nowrap;
+}
+.past-speaker-item{
+	display: inline-block;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.past-speaker-img{
+	height: 120px;
+	width: 120px;
+	border-radius: 60px;
+}
+.past-speaker-text{
+	width: 120px;
+	font-size: 18px;
+	padding-top: 5px;
+	color: #2E2E2E;
+	font-family: 'Source Sans Pro', sans-serif;
+}

@@ -1,0 +1,11 @@
+POST ONE:
+Free hosting for our QCOP website using GH-Pages
+Explain the CNAME
+
+POST TWO:
+HTACCESS
+
+
+POST THREE:
+No SSL?
+

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<style>
+canvas {
+  background-color:rgba(128,128,128,0.6);
+}
+</style>
+
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<style>
+#canvas{
+	width: 100%;
+	min-height: 100%;
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+}
+</style>
+
+</head>
+<body>
+<canvas width="400" height="300" id="canvas">Please use a modern browser</canvas>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	var c=document.getElementById("canvas");
+	
+	printCanvasDimensions();
+
+	var windowWidth = $(window).width(); //retrieve current window width
+	var windowHeight = $(window).height();
+	
+	console.log("Width of Window:" + windowWidth);
+	console.log("Height of Window:" + windowHeight);
+
+	c.width = windowWidth;
+	c.height = windowHeight;
+
+	printCanvasDimensions();
+
+	var numberOfPoints = windowWidth/2;
+
+	for(var i = 0;i < 5;i++){
+		var startingX = windowWidth/2;
+		var startingY = windowHeight/2;
+		var speed = Math.floor((Math.random() * 8000) + 1000); 
+		var points = generatePoints(numberOfPoints, windowWidth, windowHeight, startingX, startingY);
+		if(points.length > 0){
+			drawLine(points, speed);
+		}
+	
+	}
+
+	
+});
+
+function printCanvasDimensions(){
+	var c=document.getElementById("canvas");
+
+	var width = c.width;
+	var height = c.height;
+
+	console.log("Width of canvas:" + width);
+	console.log("Height of canvas:" + height);
+}
+function generatePoints(numberOfPoints, windowWidth, windowHeight, startingX, startingY){
+	var points = [];
+
+	//var previousPointX = Math.floor((Math.random() * windowWidth) + 0);
+	//var previousPointY = Math.floor((Math.random() * windowHeight) + 0);
+	/*
+	var previousPointX = startingX;
+	var previousPointY = startingY;
+	var strugglingToFindPoint = 0;
+	while(strugglingToFindPoint < 3000){
+		
+		var xDirection = Math.floor((Math.random() * 1) + 0);
+		var yDirection = Math.floor((Math.random() * 1) + 0);
+
+		if(xDirection == 0 && previousPointX > 0){
+			xDirection = -1;
+		}else{
+			xDirection = 1;
+		}
+		if(yDirection == 0 && previousPointY > 0){
+			yDirection = -1;
+		}else{
+			yDirection = 1;
+		}
+
+		x = previousPointX + 130 * xDirection;
+		y = previousPointY + 130 * yDirection;
+		
+		
+		//create a point
+		var p = {la:x,lo:y};
+		//avoids repeats
+		//indexOf wasnt working
+		var found = false;
+		for(var i = 0; i < points.length; i++) {
+		    if (points[i].la == x && points[i].lo == y) {
+		        found = true;
+		        break;
+		    }
+		}
+		if(found == true){
+			strugglingToFindPoint++;
+		}else{
+			previousPointX = x;
+			previousPointY = y;
+			points.push(p);
+		}
+	}
+	*/
+	var possibleXs = [];
+	for(var i = 0;i < windowWidth;i++){
+		if(windowWidth % 2 == 0){
+			//every 10 spaces
+			if(i % 10 == 0){
+				possibleXs.push(i);
+			}
+		}else{
+			//every 11 spaces
+			if(i % 11 == 0){
+				possibleXs.push(i);
+			}
+		}
+	}
+	var possibleYs = [];
+	for(var i = 0;i < windowHeight;i++){
+		if(windowHeight % 2 == 0){
+			//every 10 spaces
+			if(i % 10 == 0){
+				possibleYs.push(i);
+			}
+		}else{
+			//every 11 spaces
+			if(i % 11 == 0){
+				possibleYs.push(i);
+			}
+		}
+	}
+	
+	return points;
+}
+function drawLine(points, speed){
+	console.log("Number of points:" + points.length);
+	console.log("Speed:" + speed);
+
+	var c=document.getElementById("canvas");
+	var ctx=c.getContext("2d");
+	ctx.moveTo(points[0].la,points[0].lo);
+	//ctx.lineTo(currentPoint.la,currentPoint.lo);
+	ctx.strokeStyle="#FFFFFF";
+	ctx.lineWidth=5;
+	//Add on for the animation
+	var counter = 1,
+    inter = setInterval(function() {
+        //create interval, it will
+        //iterate over pointes and when counter > length
+        //will destroy itself
+        var point = points[counter++];
+        ctx.lineTo(point.la, point.lo); 
+        ctx.stroke();
+
+        ctx.beginPath();
+		ctx.arc(point.la,point.lo,5,0,2*Math.PI);
+		ctx.fillStyle = "#FFFFFF";
+		ctx.stroke();
+		ctx.closePath();
+		ctx.fill();
+        if (counter >= points.length) {
+           clearInterval(inter);
+        }
+        //console.log(counter);
+    }, speed);
+	//above is for the animation
+	ctx.stroke();
+
+	
+}
+</script>
+</body>
+</html>
