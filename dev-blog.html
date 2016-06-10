@@ -1,11 +1,162 @@
+<!DOCTYPE html>
 <html>
+
 <head>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/navbar.css"/>
+    <link rel="stylesheet" href="./css/footer.css"/>
+    <link rel="stylesheet" href="./css/dev-blog.css"/>
 </head>
-<body>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top" id="navbar">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+					<img src="./imgs/qcop-red.png" id="brand-img" >
+                </a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a style="color:white;" href="#" class="navbar-link">About</a></li>
+                    <li><a style="color:white;" href="#" class="navbar-link">Speakers</a></li>
+                    <li><a style="color:white;" href="#" class="navbar-link">Sponsors</a></li>
+                    <li><a style="color:white;" href="#" class="navbar-link">Questions</a></li>
+                    <li><a href="#">Tw</a></li>
+                    <li><a href="#">Fb</a></li>
+                    <!--
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expa
+                        nded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </li>
+                    -->
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    
+	<div class="container">
+		<div class="title-row row">
+			<div class="col-sm-10 col-sm-offset-1">
+				<div class="welcome-wrapper">
+					<h1 class="dev-blog-title">Developer's Blog</h1>
+					<p class="welcome-text">
+						Welcome to the Developer's Blog. I (Keith Weaver) decided to document the total process of putting together the QCOP website. The newest posts are at the top. Enjoy!
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="master-row row">
+			<div class="col-sm-10 col-sm-offset-1">
+				<div class="post-wrapper">
+					<h2 class="post-title">We are hosting for free</h2>
+					<p class="post-date">Created: June 10, 2016. Updated: June 10, 2016.</p>
+					<p class="post-text">
+						We are going to use <a href="https://pages.github.com/" target="_blank">Github Pages</a> to host this website for free. To collect applications and payments we are using <a href="https://eventbold.com/" target="_blank">EventBold</a>. All data is stored on EventBold and we are using their secure REST API to access the data.
+					</p>
+					
+				</div>
+				<div class="post-wrapper">
+					<h2 class="post-title">First Swing</h2>
+					<p class="post-date">Created: June 10, 2016. Updated: June 10, 2016.</p>
+					<p class="post-text">
+						Started to build the website. All code can be found here: <a href="https://github.com/kweaver00/QCOP-2017-Website">https://github.com/kweaver00/QCOP-2017-Website</a>
+					</p>
+					<p class="post-text">
+						Update #1:
+					</p>
+					<iframe width="420" height="315" src="https://www.youtube.com/embed/NudWLmf72qo" frameborder="0" allowfullscreen></iframe>
+					<p class="post-text">
+						Update #2:
+					</p>
+					<iframe width="420" height="315" src="https://www.youtube.com/embed/xrowtd5i5ug" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<div class="post-wrapper">
+					<h2 class="post-title">Me</h2>
+					<p class="post-date">Created: June 10, 2016. Updated: June 10, 2016.</p>
+					<p class="post-text">
+						Hey, my name is <a href="https://keithweaver.ca" target="_blank">Keith Weaver</a> and I am the IT Coordinator for QCOP this year. I did it back in 2015 and decided that it could be cool if I documented the full process.<br/>
+						<br/>
+						Here was the QCOP 2015 Website. The 2016 was a <a href="https://en.wikipedia.org/wiki/Fork_(software_development)" target="_blank">fork</a> of this.
+					</p>
+					<iframe width="420" height="315" src="https://www.youtube.com/embed/5GLKnKhy3XU" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer-wrapper">
+		<div class="container">
+			<!--
+				Logo
+
+				Main Page links:
+				Home
+				About
+				Speakers
+				Sponsors
+				Questions
+				
+				Team
+				Blog
+				Dev Blog
+
+				Contact
+				Press
+				Media Kit
+			-->
+			<div class="footer-row row">
+				<div class="col-sm-6">
+					<img src="./imgs/qcop-white.png" class="footer-logo">
+
+				</div>
+				<div class="col-sm-3 text-right">
+					<p class="footer-link-text"><a href="#" class="footer-link">Home</a></p>
+					<p class="footer-link-text"><a href="#" class="footer-link">About</a></p>
+					<p class="footer-link-text"><a href="#" class="footer-link">Speakers</a></p>
+					<p class="footer-link-text"><a href="#" class="footer-link">Sponsors</a></p>
+					<p class="footer-link-text"><a href="#" class="footer-link">Questions</a></p>
+				</div>
+				<div class="col-sm-3">
+					<p class="footer-link-text"><a href="./team.html" class="footer-link">Team</a></p>
+					<p class="footer-link-text"><a href="./blog.html" class="footer-link">Blog</a></p>
+					<p class="footer-link-text"><a href="./dev-blog.html" class="footer-link">Dev Blog</a></p>
+					<br/>
+					<p class="footer-link-text"><a href="./contact.html" class="footer-link">Contact</a></p>
+					<p class="footer-link-text"><a href="./media.html#press" class="footer-link">Press</a></p>
+					<p class="footer-link-text"><a href="./media.html" class="footer-link">Media Kit</a></p>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquer
+y/1.1jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </body>
+
 </html>

@@ -1,6 +1,6 @@
 .sponsors-row{
 	padding-top: 150px;
-	padding-bottom: 50px;
+	padding-bottom: 20px;
 }
 .sponsors-title{
 	font-size: 42px;
@@ -11,6 +11,28 @@
 	font-size: 18px;
 }
 .past-sponsors-row{
-	padding-top: 150px;
+	padding-top: 20px;
 	padding-bottom: 150px;
+}
+
+#td-wrapper{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+#td-img{
+	height: 120px;
+}
+#google-wrapper{
+	padding-top: 20px;
+	padding-bottom: 40px;
+}
+#google-img{
+	height: 150px;
+}
+#facebook-wrapper{
+	padding-top: 50px;
+	padding-bottom: 40px;
+}
+#facebook-img{
+	height: 70px;
 }

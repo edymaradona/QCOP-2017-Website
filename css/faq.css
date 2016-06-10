@@ -1,0 +1,19 @@
+.faq-row{
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.faq-title{
+	font-size: 42px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 700;
+}
+.faq-question-text{
+	font-size: 24px;
+	font-weight: 700;
+	font-family: 'Source Sans Pro', sans-serif;
+	padding-top: 30px;
+}
+.faq-answer-text{
+	font-size: 20px;
+	font-family: 'Cabin', sans-serif;
+}

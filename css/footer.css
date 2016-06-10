@@ -1,0 +1,25 @@
+.footer-wrapper{
+	background-color: #2e2e2e;
+}
+.footer-row{
+	padding-top: 50px;
+	padding-bottom: 100px;
+}
+.footer-logo{
+	height: 50px;
+}
+.footer-link-text{
+	font-size: 16px;
+	color: white;
+	font-family: 'Cabin', sans-serif;
+	margin-top: -10px;
+	position: relative;
+}
+.footer-link{
+	font-family: 'Cabin', sans-serif;
+	color: white;
+}
+.footer-link:hover{
+	color: #f1f1f1;
+
+}
