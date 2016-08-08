@@ -1,0 +1,36 @@
+body{
+	background-color: #f1f1f1;
+}
+.team-title-row{
+	padding-top: 80px;
+	padding-bottom: 20px;
+}
+.team-row{
+	padding-bottom: 170px;
+}
+.team-card{
+	width: 100%;
+	background-color: white;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.team-img{
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+}
+.team-description-wrapper{
+	display: inline-block;
+}
+.team-title{
+	font-size: 16px;
+}
+.team-job{
+	font-size: 12px;
+}
+.team-description{
+	font-size: 12px;
+}

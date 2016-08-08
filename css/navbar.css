@@ -1,5 +1,5 @@
 #navbar{
-	background-color: red;
+	background-color: #a00919;
 	border-style: none;
 }
 #brand-img{
@@ -13,4 +13,11 @@
 }
 .navbar-link:hover{
 	color: #d8d8d8;
+}
+.navbar-social-icon{
+	height: 20px;
+}
+.navbar-social-wrapper{
+	width: 40px;
+	text-align: center;
 }
