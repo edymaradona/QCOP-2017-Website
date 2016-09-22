@@ -15,6 +15,8 @@ body{
 	padding-right: 20px;
 	padding-top: 15px;
 	padding-bottom: 15px;
+
+	margin-top: 15px;
 }
 .team-img{
 	display: inline-block;
@@ -27,9 +29,13 @@ body{
 }
 .team-title{
 	font-size: 16px;
+	position: relative;
+	top: 21px;
 }
 .team-job{
 	font-size: 12px;
+	position: relative;
+	top: 9px;
 }
 .team-description{
 	font-size: 12px;
