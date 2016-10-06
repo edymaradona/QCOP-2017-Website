@@ -15,24 +15,8 @@
 	padding-bottom: 50px;
 }
 
-#td-wrapper{
-	padding-top: 20px;
-	padding-bottom: 20px;
-}
-#td-img{
-	height: 120px;
-}
-#google-wrapper{
-	padding-top: 20px;
-	padding-bottom: 40px;
-}
-#google-img{
-	height: 150px;
-}
-#facebook-wrapper{
-	padding-top: 50px;
-	padding-bottom: 40px;
-}
-#facebook-img{
-	height: 70px;
+.past-sponsors-img{
+	display: inline-block;
+	max-height: 150px;
+	padding:15px 15px;
 }

@@ -9,6 +9,7 @@
 }
 .speakers-text{
 	font-size: 24px;
+
 }
 .past-speakers-wrapper{
 	overflow: scroll;
@@ -23,14 +24,18 @@
 	padding-bottom: 10px;
 	padding-left: 5px;
 	padding-right: 5px;
+
 }
 .past-speaker-img{
 	height: 120px;
 	width: 120px;
 	border-radius: 60px;
+
+	background-size: cover;
 }
 .past-speaker-text{
 	width: 120px;
+	max-width: 120px;
 	font-size: 18px;
 	padding-top: 5px;
 	color: #2E2E2E;
