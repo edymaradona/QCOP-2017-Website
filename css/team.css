@@ -43,13 +43,23 @@ body{
 	top: 9px;
 	color: white;
 }
+.team-major{
+	font-size: 12px;
+	position: relative;
+	margin-top: -3px;
+	color: white;
+}
 .team-year{
 	font-size: 12px;
 	position: relative;
-	margin-top: -4px;
+	margin-top: -12px;
 	color: white;
 
 	padding-bottom: 10px;
+}
+.team-under-card-wrap{
+	padding:10px 15px;
+	background-color: #2e2e2e;
 }
 .team-fun-fact-label{
 	font-size: 10px;
