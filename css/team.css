@@ -22,6 +22,7 @@ body{
 
 	height: 225px;
 }
+
 .team-img{
 	display: inline-block;
 	width: 100px;
@@ -79,4 +80,12 @@ body{
 	font-size: 12px;
 	position: relative;
 	margin-top: -7px;
+}
+.team-img-wrapper{
+	background-color: #2e2e2e;
+	padding-top: 15px;	
+}
+.team-image{
+	width: 100%;
+	max-width: 700px;
 }
