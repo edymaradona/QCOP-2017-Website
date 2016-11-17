@@ -41,7 +41,8 @@
 	top: 20px;
 
 	font-size: 18px;
-
+	
+	margin-right: 3px;
 }
 .apply-btn:hover{
 	text-decoration: none;
